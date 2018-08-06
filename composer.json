@@ -1,0 +1,8 @@
+{
+    "require": {
+        "symfony/console": "^4.1"
+    },
+    "autoload": {
+        "psr4": {"GlebecV\\": "src/"}
+    }
+}
