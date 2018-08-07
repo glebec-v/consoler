@@ -3,10 +3,6 @@
 
 require __DIR__.'/vendor/autoload.php';
 
-use Symfony\Component\Console\Application;
-use GlebecV\SumCommand;
-
-$app = new Application("Welcome from console", "v1.0.0");
+$app = new \Symfony\Component\Console\Application("Welcome from console", "v1.0.0");
+$app->add(new \GlebecV\SumCommand());
 $app->run();
-
-//echo 'Hi'.PHP_EOL;

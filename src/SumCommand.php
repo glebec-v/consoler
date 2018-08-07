@@ -9,7 +9,7 @@ use Symfony\Component\Console\Input\InputArgument;
 
 class SumCommand extends Command
 {
-    public function configure()
+    protected function configure()
     {
         $this->setName('sum')
              ->setDescription('This command sums two numbers')
@@ -17,10 +17,13 @@ class SumCommand extends Command
              ->addArgument('b', InputArgument::REQUIRED, 'Second number');
     }
 
-    protected function execute(InputInterface $a, InputInterface $b)
+    protected function execute(InputInterface $input, OutputInterface $output)
     {
         $a = $input->getArgument('a');
         $b = $input->getArgument('b');
-        $output->writeln("Hello from execute");
+
+        $sum = new Summator($a, $b);
+
+        $output->writeln($sum->getSum());
     } 
 }

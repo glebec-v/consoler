@@ -4,9 +4,42 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "380894a67dbb87e4a0da0c5ed4a784ee",
-    "content-hash": "5be9f924dbe7739354f5b170cde42b99",
+    "hash": "b635d357703b6dfbcc81f12a4ccf35b3",
+    "content-hash": "608f428eaf023de6d6add5a2763e5550",
     "packages": [
+        {
+            "name": "glebec-v/summ",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/glebec-v/summ.git",
+                "reference": "49d207beff2b2f782625e510f4e729c5b1d885df"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/glebec-v/summ/zipball/49d207beff2b2f782625e510f4e729c5b1d885df",
+                "reference": "49d207beff2b2f782625e510f4e729c5b1d885df",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GlebecV\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gleb Vorotilov",
+                    "email": "gvorotilov@gmail.com"
+                }
+            ],
+            "description": "simple demo for packagist",
+            "time": "2018-08-05 09:49:48"
+        },
         {
             "name": "symfony/console",
             "version": "v4.1.3",
